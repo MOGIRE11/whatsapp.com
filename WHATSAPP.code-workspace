@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "..\\MyFacebook"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "WHATSAPP"
+    }
+}
