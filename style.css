@@ -12,6 +12,7 @@ body {
     gap: 80px;
     align-items: flex-start;
     text-rendering: optimizeLegibility;
+    overflow: hidden;
 }
 
 .navbar {
