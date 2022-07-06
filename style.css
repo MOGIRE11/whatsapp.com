@@ -12,7 +12,7 @@ body {
     gap: 80px;
     align-items: flex-start;
     text-rendering: optimizeLegibility;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .navbar {
@@ -96,7 +96,6 @@ body {
 .rightside img {
     height: 890px;
     width: 480px;
-    aspect-ratio: auto 490/890;
 }
 
 .business {
@@ -153,6 +152,7 @@ body {
     border-radius: 90px;
     width: 250px;
     align-self: center;
+    text-align: center;
 }
 
 .explore p {
@@ -201,4 +201,39 @@ body {
 
 .copyright {
     margin-left: -500px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        width: 100%;
+        padding: 0; 
+        margin: 0;           
+    }
+  
+    .main-display {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: #128c7e ;
+        margin: 0;
+        align-items: center;
+        
+    }
+    .business{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;     
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
