@@ -12,7 +12,6 @@ main{
 }
 nav{
     height: 14vh;
-    max-height: 15vh;
     width: 100%;
     background-color: #128c7e;
     color:white ;
@@ -68,8 +67,8 @@ li{
 .page1-left h2{
     font-size: 2rem;
     font-weight: lighter;
-    line-height: 2rem;
     color: #1c1e21;
+    margin-bottom: 5%;
 }
 .page1-left p{
     font-size: 1.2rem;
@@ -127,7 +126,6 @@ select{
     line-height: 1.7rem; 
 }
 .bs-app{
- vertical-align: middle;
  width: 49%;
  height: 100%;
     background-color: #d8e8ea;
@@ -140,6 +138,7 @@ select{
 }
 .bs-app img{
     max-height:60%;
+    max-width: 100%;
 }
 .bs-app a{
     text-decoration: none;
@@ -192,6 +191,9 @@ select{
     text-decoration: none;
     color: white;
 }
+.links a:hover{
+    text-decoration: underline;
+}
 #links{
     width: 20%;
     height: 70%;  
@@ -199,7 +201,7 @@ select{
 #links li{
     line-height: 2rem;
     font-weight: 100;
-    font-size: large;
+    font-size: 1rem;
 }
 .footer{
     background-color:#1c1e21;
@@ -229,65 +231,150 @@ select{
     object-fit: contain;
     display: none;
 }
-@media (max-width:768px){
-    nav{
-     display: none;
-    }
-   
-   .page1{
-    background-color: #128c7e;
-    width: 100%;
-    flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
-   margin-bottom: 0;
-   object-fit: cover;
-  
-   }
-   .page1-left{
-    width: 100%;
-    max-width: 100%;
-    padding: 10%;
-    height:70vh;
+#download{
+    height: 50px;
+    width: 200px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid #075e54;
+    border-radius: 40px;
+    background: #075e54;
+    color: white;
     text-align: center;
-    color: white;
-   }
-.page1-left h2,.page1-left p{
-    color: white;
-    text-rendering: optimizeLegibility;
-    font-weight: lighter;
+    display: none;
 }
-   #menu{
-    display: flex; 
-    color: white;
-    position: absolute;
-    top: 1px;
-    right: 1px;
+#halfphone{
+    display: none;
+    height: 60vh;
+}
+@media (min-width:768px) and (max-width:1020px){
+   nav{
+    height: 10vh;
    }
-   #icon{
-    display: flex;
-    
-   }
-   .data,.page1-left ul{
+    #full-icon{
     display: none;
    }
-   .page1-right{
-    height: 10vh;
-    display: f;
+   #select{
+    display: none;
    }
-   .business{
+   .logo{
+    width: 15%;
+   }
+    #icon{
+        display: flex;
+        height: 40px;     
+    }
+    nav ul{
+        width: 85%;
+    }
+    nav li{
+        font-size: .99rem;       
+    }
+}
+@media (max-width:768px){
+    nav{
+        height: 18vh;
+        position: relative;
+    }
+  nav ul,#full-icon{
+    display: none;
+  }
+  .logo{
+    width: 100%;
+  }
+  #icon{
+    display: flex;
+    height: 60px;
+  }
+  #menu{
+    display: flex;
+    position: absolute;
+    top: 1px;
+    right: 1px;  
+  }
+  .page1{
     flex-direction: column;
-    font-size: medium;
-   }
-   .bs-app{
+    height: 109vh;
+    background-color: #128c7e;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .data{
+    display: none;
+}
+  #fa-list{
+    display: none;
+  }
+  #download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page1-left{
+    width: 80%;
+    align-items: center;
+    text-align: center; 
+  overflow: hidden;
+  }
+  .page1-left p, .page1-left h2{
+    color: white;
+  }
+  #full-phone{
+    display: none;
+  }
+  #halfphone{
+    display: flex;
+  }
+  .business{
+    flex-direction: column;
+    height: 160vh;
+  }
+  .bs-app{
     width: 100%;
-    max-width: 100%;
+    height: 115vh;
+   font-size: medium;
+   font-weight: 400;
+  }
+  .bs-app p{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+  }
+  .bs-app h2{
+    margin-bottom: 10%;
+  }
+ .encrypt{
+    width: 100%;
     height: 100vh;
-    padding: 10%;
-   }
-   .encrypt{
-    width: 100%;
-    max-width: 100%;
-   height: 70vh;
-   }
+    display: block;
+ }
+ .explore{
+    height: 20vh;
+    padding-top: 10%;
+ }
+ .links{   
+    display: grid;
+    height: 75vh;
+   grid-template-columns:repeat(2,1fr);
+   grid-template-rows:auto ; 
+   justify-items: center;
+   
+ }
+ #links {
+width: 49%;
+padding: 0;
+ }
+ #links li{
+    font-size: .9rem;
+    font-weight: 400;
+    text-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+ }
+ .footer{
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   font-size: 1.1rem;
+ }
+ 
    }
