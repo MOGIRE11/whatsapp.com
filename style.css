@@ -11,13 +11,14 @@ main{
     font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 nav{
-    height: 14vh;
+    height: 10vh;
     width: 100%;
     background-color: #128c7e;
     color:white ;
     display: flex;
     align-items: center;
-    position: fixed;   
+    position: sticky;
+    top: 0;   
 }
 .logo{
     width: 30%;
@@ -28,7 +29,6 @@ nav ul{
     width:70%;
     display: flex;
     justify-content: space-evenly;
-   flex-shrink: inherit;
 }
 nav ul a{
     text-decoration: none;
@@ -38,16 +38,16 @@ li{
     list-style-type: none;
 }
 .page1{
-    height: 110vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .page1-left{
     width: 30%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -88,7 +88,7 @@ li{
     height: 60vh;
 }
 .page1-right img{
-    height: 85vh;
+    height: 80vh;
 }
 .page1-left li:hover{
     text-decoration: underline;
@@ -112,7 +112,7 @@ select{
 
 .business{
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -120,10 +120,12 @@ select{
     text-rendering: optimizeLegibility;
     font-weight: lighter;
     color: #1c1e21;
-  
+ 
 }
 .business p{
     line-height: 1.7rem; 
+    font-size: medium;
+    font-weight: 500;
 }
 .bs-app{
  width: 49%;
@@ -137,7 +139,7 @@ select{
     padding-bottom: 0;
 }
 .bs-app img{
-    max-height:60%;
+    max-height:55%;
     max-width: 100%;
 }
 .bs-app a{
@@ -164,7 +166,7 @@ select{
 }
 .explore{
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,6 +320,7 @@ select{
   }
   .page1-left p, .page1-left h2{
     color: white;
+    font-weight: 400;
   }
   #full-phone{
     display: none;
@@ -339,9 +342,11 @@ select{
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 5%;
+    font-weight: 400;
   }
   .bs-app h2{
     margin-bottom: 10%;
+    font-weight: 400;
   }
  .encrypt{
     width: 100%;
