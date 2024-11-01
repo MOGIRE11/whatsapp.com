@@ -1,0 +1,17 @@
+# The following files will not be committed to git 
+
+# Node Modules
+node_modules
+
+# Build output
+build/
+dist/
+
+# environment variables
+.env
+.env*
+
+# Cache and temporary files
+.DS_Store
+Thumbs.db
+.vscode/
